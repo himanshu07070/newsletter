@@ -1,3 +1,4 @@
+[![License](https://img.shields.io/badge/License-GPL%20v3-yellow&?style=for-the-badge)](LICENSE)
 # Newsletter Subscription Service
 
 ## Introduction
