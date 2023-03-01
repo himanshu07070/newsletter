@@ -17,8 +17,8 @@ func Router(dataChannel chan input.MetaData) *gin.Engine {
 	utils.Logger.Info("Inside router...")
 	router := gin.Default()
 	router.Use(Middleware(dataChannel))
-	router.GET("/newsletters", handlers.UnsubscribeEmails)
-	router.POST("/save/emails", handlers.SaveEmails)
-	router.POST("/processing/data", handlers.ProcessingData)
+	router.POST("/unsubscribe", handlers.UnsubscribeEmails)
+	router.POST("/subscribe", handlers.SaveEmails)
+	router.POST("/newsletter", handlers.Newsletter)
 	return router
 }

@@ -8,7 +8,7 @@ import (
 	utils "github.com/himanshu07070/newsletter/Utils"
 )
 
-func ProcessingData(c *gin.Context) {
+func Newsletter(c *gin.Context) {
 
 	var metaData input.MetaData
 	err := c.BindJSON(&metaData)
